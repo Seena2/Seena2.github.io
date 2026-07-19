@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Site info-->
-    <title></title>
-    <meta name="description" content="Your Name-A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.">
-    <meta name="author" content="Your Name">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <meta name="description" content="{{name}}-{{summary}}">
+    <meta name="author" content="{{name}}">
     <!-- fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <!-- Stylesheets -->
@@ -15,7 +15,7 @@
      <link rel="icon" type="image/svg+xml" href="img/dh.png" />
 </head>
 <body>
-    <header class="header_container">
+    <header >
         <div class="banner">
              <div class="title">
                 <h1>Software Engineer</h1>
@@ -23,7 +23,7 @@
             </div>
             <div class="contact">
                 <a href="">dinku22@gmail.com</a>
-               | <a href="htps://www.linkedin.com/in/dinku-hamda"> htps://www.linkedin.com/in/dinku-hamda</a>
+               | <a href="https://www.linkedin.com/in/dinku-hamda"> https://www.linkedin.com/in/dinku-hamda</a>
                | <a href="https://www.github.com/Seena2">https://www.github.com/Seena2</a>
             </div>
         </div>
@@ -41,28 +41,7 @@
     </header>
      <main>
            <!-- The inheriting file will inject its contents here -->
-        
-    
-    <div class="container">
-        <div class="main_content">
-            <div class="summary">
-                <h1>summary</h1>
-            <p>I am professional software engineer with 15+ years of hands-on job experience in designing, developing,
-maintaining and shipping high-quality, reliable, scalable and performant applications while providing
-leadership, guidance, and technical direction within development teams.
-            </p>
-            <p>My goal is to empower people and businesses by transforming business requirements into robust, scalable
-and usable applications that solves real-world problems, improves lives, and drives innovation.</p>
-            </div>
-            
-
-        </div>
-        <div class="sidebar">
-            <h1>This is sidebar</h1>
-        </div>
-
-    </div>
-
+        {% block content %}{% endblock %}
      </main>
      <footer>
 <div class="social_links">
