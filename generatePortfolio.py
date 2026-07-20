@@ -4,7 +4,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 # Load JSON data
-with Path("data/portfolio.json").open(encoding="utf-8") as f:
+with Path("data/dinku.json").open(encoding="utf-8") as f:
     data= json.load(f)
 
 # Add any extra content t to the data if needed
@@ -23,7 +23,6 @@ env = Environment(loader= FileSystemLoader("templates"), autoescape=True)
 base_template=env.get_template("_base.html")
 index_template=env.get_template("index_template.html")
 resume_template=env.get_template("resume_template.html")
-
 
 # Render the template with data
 index_ouput = index_template.render(**data) # '**data'=> unpack the dictionary and pass to the tempalte ( allows u to use {{name}} instead of {{data.name}})

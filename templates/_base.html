@@ -18,14 +18,25 @@
     <header >
         <div class="banner">
              <div class="title">
-                <h1>Software Engineer</h1>
-                <h2>Dinku Hamda</h2>
+                {% if label %}<h1>{{label}}</h1>{% endif %}
+                <h2>{{name}}</h2>
             </div>
-            <div class="contact">
-                <a href="">dinku22@gmail.com</a>
-               | <a href="https://www.linkedin.com/in/dinku-hamda"> https://www.linkedin.com/in/dinku-hamda</a>
-               | <a href="https://www.github.com/Seena2">https://www.github.com/Seena2</a>
-            </div>
+            <!-- Contact address -->
+             {% if contact.email or contact.phone or contact.location %}
+             <Address >
+                <ul class="contact">
+                    {% if contact.email %}<li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li> {% endif %}
+                  |  <li><a href="https://seena2.github.io/">Seena2.com</a></li>
+                  |  <li><a href="https://www.linkedin.com/in/dinku-hamda">https://www.linkedin.com/in/dinku-hamda</a></li>
+                  |  <li><a href="https://www.github.com/Seena2">https://www.github.com/Seena2</a></li>
+                <!-- |   {% if contact.phone %}<li></li><a href="tel:+{{ contact.phone | replace('-', '') }}">{{ contact.phone }}</a>{% endif %}
+                |   {% if contact.location %}<li>{{ contact.location }}</li>{% endif %} -->
+                </ul>
+             </Address>
+             {% endif %}
+             
+   
+            
         </div>
         <nav>
             <div class="logo">
@@ -35,22 +46,35 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="blogs.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div></div>
         </nav>
     </header>
      <main>
            <!-- The inheriting file will inject its contents here -->
         {% block content %}{% endblock %}
      </main>
-     <footer>
-<div class="social_links">
-    <ul>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Linkin</li>
-    </ul>
-</div>
-     </footer>
+      <footer class="page-footer">
+      <div class="container">
+        <!-- Social media links -->
+              {% if social_links %}
+              <ul class="social_liks">
+                {% for link in social_links %}
+                  <li><a href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}" class="link-with-icon">
+                      {% if link.svg_data %}{{ link.svg_data | safe }}{% endif %}
+                      {{ link.label }}
+                    </a>
+                  </li>
+               
+                {% endfor %}
+              </ul>
+            {% endif %}
+        <p>© {{ current_year }} {{ name }}. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

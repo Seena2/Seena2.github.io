@@ -1,24 +1,101 @@
 {% extends "_base.html" %}
-{% block title %}{{ title }}{% endblock %}
+{% block title %}{{name}} - {{ title }}{% endblock %}
 {% block content %}
     
     <div class="container">
-        <div class="main_content">
-            <div class="summary">
-                <h1>summary</h1>
-            <p>I am professional software engineer with 15+ years of hands-on job experience in designing, developing,
-maintaining and shipping high-quality, reliable, scalable and performant applications while providing
-leadership, guidance, and technical direction within development teams.
-            </p>
-            <p>My goal is to empower people and businesses by transforming business requirements into robust, scalable
-and usable applications that solves real-world problems, improves lives, and drives innovation.</p>
-            </div>
-            
+        <main>
+          {% if work_experience %}
+            <section>
+              <h2 class="section-heading">Work Experience</h2>
+              {% for job in work_experience %}
+                <section>
+                  <h3>
+                    {% if job.url %}
+                      {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
+                    {% else %}
+                      {{ job.position }} at {{ job.company }}
+                    {% endif %}
+                  </h3>
+                  {% if job.start_date and job.end_date %}
+                    <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
+                  {% endif %}
+                  {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
+                  {% if job.highlights %}
+                    <ul>
+                      {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
 
-        </div>
-        <div class="sidebar">
-            <h1>This is sidebar</h1>
-        </div>
+          {% if projects %}
+            <section>
+              <h2 class="section-heading">Projects</h2>
+              {% for project in projects %}
+                <section>
+                  <h3>
+                    {% if project.url %}
+                      <a href="{{ project.url }}">{{ project.title }}</a>
+                    {% else %}
+                      {{ project.title }}
+                    {% endif %}
+                  </h3>
+                  {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                  {% if project.highlights %}
+                    <ul>
+                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+        </main>
+
+        <!-- Sidebar Section -->
+        <aside>
+          {% if languages %}
+            <section>
+              <h2 class="section-heading">Languages</h2>
+              <ul class="unstyled-list">
+                {% for lang in languages %}
+                  <li>
+                    <h3>{{ lang.language }}</h3>
+                    <p class="section-label">{{ lang.fluency }}</p>
+                  </li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+
+          {% if volunteer_experience %}
+            <section>
+              <h2 class="section-heading">Volunteer Experience</h2>
+              {% for vol in volunteer_experience %}
+                <section>
+                  <h3>
+                    {% if vol.url %}
+                      {{ vol.position }} at <a href="{{ vol.url }}">{{ vol.organization }}</a>
+                    {% else %}
+                      {{ vol.position }} at {{ vol.organization }}
+                    {% endif %}
+                  </h3>
+                  {% if vol.start_date and vol.end_date %}
+                    <p class="section-label">{{ vol.start_date }} - {{ vol.end_date }}</p>
+                  {% endif %}
+                  {% if vol.summary %}<p>{{ vol.summary }}</p>{% endif %}
+                  {% if vol.highlights %}
+                    <ul>
+                      {% for highlight in vol.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+        </aside>
 
     </div>
 {% endblock %}
