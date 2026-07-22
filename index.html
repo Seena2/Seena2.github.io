@@ -10,7 +10,7 @@
     <!-- fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <!-- Stylesheets -->
-     <link rel="stylesheet" href="./css/styles.css"/>
+     <link rel="stylesheet" href="css/styles.css"/>
      <!-- favicon -->
      <link rel="icon" type="image/svg+xml" href="img/dh.png" />
 </head>
@@ -18,70 +18,95 @@
     <header >
         <div class="banner">
              <div class="title">
-                <h1>Software Engineer</h1>
-                <h2>Dinku Hamda</h2>
+                <h3>Software Engineer</h3>
+                <h5>Dinku Hamda</h5>
             </div>
             <!-- Contact address -->
              
              <Address >
                 <ul class="contact">
                     <li><a href="mailto:dinku22@gmail.com">dinku22@gmail.com</a></li> 
-                  |  <li><a href="https://seena2.github.io/">Seena2.com</a></li>
-                  |  <li><a href="https://www.linkedin.com/in/dinku-hamda">https://www.linkedin.com/in/dinku-hamda</a></li>
-                  |  <li><a href="https://www.github.com/Seena2">https://www.github.com/Seena2</a></li>
+                   <li class="left_border"><a href="https://seena2.github.io/">www.Seena2.com</a></li>
+                   <li class="left_border"><a href="https://www.linkedin.com/in/dinku-hamda">www.linkedin.com/in/dinku-hamda</a></li>
+                   <li class="left_border"><a href="https://www.github.com/Seena2">www.github.com/Seena2</a></li>
                 <!-- |   
                 |    -->
                 </ul>
              </Address>
              
-             
-   
-            
         </div>
-        <nav>
+       
+    </header>
+     <nav>
             <div class="logo">
                 <a href="index.html"><img src="img/dh.png" alt="logo"></a> 
             </div>
-            <ul class="nav_links">
-                <li><a href="about.html">About</a></li>
+            <div class="mobile_menu">
+              <button class="burger-menu" id="burger-btn">☰ </button>
+              <ul class="nav_menu" id="nav_menu">
+                <button class="close-btn" id="close-btn">✖</button>
+                <li><a href="#about">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="blogs.html">Blog</a></li>
                 <li><a href="courses.html">Courses</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div></div>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="desktop_menu">
+              <ul  >
+                <li><a href="#about">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="account"></div>
         </nav>
-    </header>
-     <main>
-           <!-- The inheriting file will inject its contents here -->
-        
-    
-    <div class="container">
-        <main class="main_content">
-          <!-- Summary -->
-            
-            <section class="summary">
-                <h2 class="section-heading">About me</h2>
-                 
-                <p class="summary_paragraph">I am professional software engineer with 15+ years of hands-on job experience in designing, developing, maintaining and shipping high-quality, reliable, scalable and performant applications while providing leadership, guidance, and technical direction within development teams.</p>
-                 
-                <p class="summary_paragraph">My goal is to empower people and businesses by transforming business requirements into robust, scalable and usable applications that solves real-world problems, improves lives, and drives innovation.</p>
-                 
-            </section>
-            
 
-            <!-- Experiance -->
-             
-            <section>
-              <h2 class="section-heading">Work Experience</h2>
-              
-                <section>
-                  <div class="job_title">
-                    
-                      <h3 >Lead software Engineer</h3>
-                     
-                    <div class="job_company">
-                        <div class="">
+     <main class="main-content">
+        
+
+<div class="portfolio-container">
+  <aside class="sidebar">
+    <ul class="sidebar_nav">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#experiance">Experiance</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#interest">Interest</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+  </aside>
+  <div class="right_container">
+        <!-- Summary -->
+        <section id="about" class="page-section">
+               
+                <div class="summary">
+                     <h1 class="section-heading">About me</h1>
+                      
+                      <p class="summary_paragraph">I am professional software engineer with 15+ years of hands-on job experience in designing, developing, maintaining and shipping high-quality, reliable, scalable and performant applications while providing leadership, guidance, and technical direction within development teams.</p>
+                
+                      <p class="summary_paragraph">My goal is to empower people and businesses by transforming business requirements into robust, scalable and usable applications that solves real-world problems, improves lives, and drives innovation.</p>
+                
+                 </div>
+            
+        </section>
+
+        <!-- Experiance -->
+        <section id="experiance" class="page-section">
+            
+            <div class="experiances">
+            <h1 class="section-heading">Work Experience</h1>
+            
+                <div class="job">
+                    <h3 class="sub_heading">Lead software Engineer</h3> 
+                   <div class="job_company">
+                        <div class="company_name">
                           
                               Furtu Solutions
                           
@@ -91,24 +116,22 @@
                            <p class="section-label">oct, 2024 - Present</p>
                             
                         </div>
-                    </div>
-                    
                   </div>
                   
                   
-                    <ul class="job_highlights">
+                  <div class="job_highlight">
+                    <ul>
                       <li>As lead Software engineer at Furtu, I design, build, managed project scope, mitigated risks, and ensure technical deliverables aligned with stakeholder requirements, time and budgeting constraints resulting in a 25% increase in overall project success and user satisfaction</li><li>Developed scalable microservices that improved platform performance by 40%</li><li>Engineered robust, secure, and scalable web applications for diverse enterprise clients, integrating modern full-stack architectures that improved market competitiveness and user retention by 25%.</li><li>Designed and maintained scalable, secure web applications using MERN stack, optimizing front-end and back-end performance to drive a 20% increase in user. </li><li>Engineered seamless third-party API integrations, boosting core system capabilities and expanding platform service offerings by 25%</li><li>Delivered a scalable web application capable of handling 10k concurrent users without performance degradation.</li>
                     </ul>
+                    </div>
                   
-                </section>
-              
-                <section>
-                  <div class="job_title">
-                    
-                      <h3 >Software Engineer</h3>
                      
-                    <div class="job_company">
-                        <div class="">
+                 </div>
+            
+                <div class="job">
+                    <h3 class="sub_heading">Software Engineer</h3> 
+                   <div class="job_company">
+                        <div class="company_name">
                           
                               EVA-HEARD
                           
@@ -118,24 +141,22 @@
                            <p class="section-label">Oct, 2020 - Oct,2024</p>
                             
                         </div>
-                    </div>
-                    
                   </div>
                   
                   
-                    <ul class="job_highlights">
+                  <div class="job_highlight">
+                    <ul>
                       <li>Developed and optimized dynamic web applications for healthcare clients, streamlining clinical workflows and boosting overall operational efficiency by 18%.</li><li>Engineered robust internal tools and automated data processing pipelines, which eliminated manual bottlenecks and boosted overall team productivity by 20%</li><li>Directed the end-to-end delivery of 10+ major web applications using diverse technology stacks, ensuring all projects were completed within strict budget and timeline constraints.</li><li>Optimized web application performance by refactoring legacy code, reducing page load times by 40% and directly increasing customer retention.</li><li>Architected reusable components and scalable APIs, automating process functionalities to significantly enhance application speed and reliability</li><li>Optimized web applications performance by refactoring code, reducing load time by 40% and boosting customer retention.</li><li>Developed and designed GIS web applications with the ArcGIS JavaScript API</li><li>Created backend user authentication systems with PHP and MySQL</li>
                     </ul>
+                    </div>
                   
-                </section>
-              
-                <section>
-                  <div class="job_title">
-                    
-                      <h3 >Full-stack developer</h3>
                      
-                    <div class="job_company">
-                        <div class="">
+                 </div>
+            
+                <div class="job">
+                    <h3 class="sub_heading">Full-stack developer</h3> 
+                   <div class="job_company">
+                        <div class="company_name">
                           
                               BOLSA
                           
@@ -145,24 +166,22 @@
                            <p class="section-label">Dec, 2018 - Oct,2020</p>
                             
                         </div>
-                    </div>
-                    
                   </div>
                   
                   
-                    <ul class="job_highlights">
+                  <div class="job_highlight">
+                    <ul>
                       <li>Engineered and maintained highly available, secure software systems, utilizing modern web technologies with a strong emphasis on Java and C# (.NET framework).</li><li>Developed and deployed scalable applications, APIs, and databases, managing critical data for thousands of active clients.</li><li>Integrated robust databases into existing MIS infrastructures, significantly expanding capabilities and streamlining day-to-day service delivery.</li><li>Optimized database performance and data integrity, establishing stringent security policies, routine backups, and comprehensive access protocols.</li>
                     </ul>
+                    </div>
                   
-                </section>
-              
-                <section>
-                  <div class="job_title">
-                    
-                      <h3 >MIS Officer</h3>
                      
-                    <div class="job_company">
-                        <div class="">
+                 </div>
+            
+                <div class="job">
+                    <h3 class="sub_heading">MIS Officer</h3> 
+                   <div class="job_company">
+                        <div class="company_name">
                           
                               SCT-UNICEF
                           
@@ -172,24 +191,22 @@
                            <p class="section-label">Dec, 2014 - Dec,2018</p>
                             
                         </div>
-                    </div>
-                    
                   </div>
                   
                   
-                    <ul class="job_highlights">
+                  <div class="job_highlight">
+                    <ul>
                       <li>Spearheaded the migration of legacy systems to a modern web architecture, reducing infrastructure costs by 30% and improving overall system reliability by 20%.</li><li>Developed and optimized scalable, secure MIS databases and backend services, significantly reducing server response times.</li><li>Engineered custom web applications for data collection and manipulation, directly increasing client operational efficiency and user engagement.</li><li>Integrated robust backend APIs and databases utilizing the .NET framework and SQL Server.</li><li>Diagnosed and resolved bottlenecks, refactoring code to maximize execution speed, scalability, and system performance.</li><li>Collaborated cross-functionally with design and development teams to implement UI/UX designs across multiple platforms.</li><li>Spearheaded continuous improvement initiatives and delivered comprehensive project specifications and event reporting.</li>
                     </ul>
+                    </div>
                   
-                </section>
-              
-                <section>
-                  <div class="job_title">
-                    
-                      <h3 >Programmer</h3>
                      
-                    <div class="job_company">
-                        <div class="">
+                 </div>
+            
+                <div class="job">
+                    <h3 class="sub_heading">Programmer</h3> 
+                   <div class="job_company">
+                        <div class="company_name">
                           
                               OLSA-INSA
                           
@@ -199,91 +216,94 @@
                            <p class="section-label">Sep, 2009 - Dec,2014</p>
                             
                         </div>
-                    </div>
-                    
                   </div>
                   
                   
-                    <ul class="job_highlights">
+                  <div class="job_highlight">
+                    <ul>
                       <li>Architected and maintained secure, highly scalable web applications utilizing Java, C#/.NET, and JavaScript, driving improved application performance and user retention.</li><li>Engineered clean, reusable, and well-documented code, delivering projects on-time and under budget while boosting overall user satisfaction.</li><li>Strengthened system defenses by implementing robust security protocols, ensuring 100% compliance with customer data protection standards.</li><li>partnered with cross-functional teams using Agile methodologies to ensure seamless project execution and timely delivery.</li>
                     </ul>
+                    </div>
                   
-                </section>
-              
-            </section>
-          
+                     
+                 </div>
+            
+            </div>
+            
+        </section>
 
-          <!-- Projects -->
-           
-            <section>
-              <h2 class="section-heading">Projects</h2>
-              <p>Some of my projects,</p>
-              <div class="projects">
-                
-                  <div class="card">
-                    <figure>
-                          <img src="img/project1.png" alt="" srcset="" width="300" height="150">
-                    </figure>
-                    <div class="discription">
-                      <h4> Hybrid fake news detection system</h4>
-                      <p> A model that  utilizes deep learning and NLP to detect fake news.</p>
+        <!-- Projects -->
+         <section id="projects" class="page-section">
+            
+              <div class="project_container">
+                <h1 class="section-heading">Projects</h1>
+                <p>Some of my projects,</p>
+                <div class="projects">
+                  
+                    <div class="card">
+                      <figure>
+                            <img src="img/project1.png" alt="" srcset="" width="300" height="150">
+                      </figure>
+                      <div class="discription">
+                        <h4> Hybrid fake news detection system</h4>
+                        <p> A model that  utilizes deep learning and NLP to detect fake news.</p>
+                          
+                          <ul>
+                          <li>Reaserch work</li>
+                          </ul>
                         
-                        <ul>
-                         <li>Reaserch work</li>
-                        </ul>
-                      
-                   </div>
-                   <div class="card_btn">
-                    <button>view details</button>
-                   </div>
-                   </div>
-                
-                  <div class="card">
-                    <figure>
-                          <img src="img/project1.png" alt="" srcset="" width="300" height="150">
-                    </figure>
-                    <div class="discription">
-                      <h4>Article Tracking system</h4>
-                      <p> An app that allows authors, editors and reviewer interact in real time.</p>
+                    </div>
+                    <div class="card_btn">
+                      <button>view details</button>
+                    </div>
+                    </div>
+                  
+                    <div class="card">
+                      <figure>
+                            <img src="img/project1.png" alt="" srcset="" width="300" height="150">
+                      </figure>
+                      <div class="discription">
+                        <h4>Article Tracking system</h4>
+                        <p> An app that allows authors, editors and reviewer interact in real time.</p>
+                          
+                          <ul>
+                          <li>authors submit and track their own manuscripts</li><li>editors  manage manuscripts and asign reviewers anonymously</li><li>reveiwers to reveiw and comment articles </li>
+                          </ul>
                         
-                        <ul>
-                         <li>authors submit and track their own manuscripts</li><li>editors  manage manuscripts and asign reviewers anonymously</li><li>reveiwers to reveiw and comment articles </li>
-                        </ul>
-                      
-                   </div>
-                   <div class="card_btn">
-                    <button>view details</button>
-                   </div>
-                   </div>
-                
-                  <div class="card">
-                    <figure>
-                          <img src="img/project1.png" alt="" srcset="" width="300" height="150">
-                    </figure>
-                    <div class="discription">
-                      <h4>Patient management system</h4>
-                      <p> An app that allows Doctors to manage patient data, diagnosis, prescriptions and follow ups.</p>
+                    </div>
+                    <div class="card_btn">
+                      <button>view details</button>
+                    </div>
+                    </div>
+                  
+                    <div class="card">
+                      <figure>
+                            <img src="img/project1.png" alt="" srcset="" width="300" height="150">
+                      </figure>
+                      <div class="discription">
+                        <h4>Patient management system</h4>
+                        <p> An app that allows Doctors to manage patient data, diagnosis, prescriptions and follow ups.</p>
+                          
+                          <ul>
+                          <li>Doctors diagnosis the patient and store the finding and prescriptions</li><li>Lab technitians run tests and register the result and attach scan files</li><li>receptions register new or check appointment of follow up patients  </li>
+                          </ul>
                         
-                        <ul>
-                         <li>Doctors diagnosis the patient and store the finding and prescriptions</li><li>Lab technitians run tests and register the result and attach scan files</li><li>receptions register new or check appointment of follow up patients  </li>
-                        </ul>
-                      
-                   </div>
-                   <div class="card_btn">
-                    <button>view details</button>
-                   </div>
-                   </div>
+                    </div>
+                    <div class="card_btn">
+                      <button>view details</button>
+                    </div>
+                    </div>
+                  
+                </div>
+                <div class="section_btn">
+                    <button class="view_button">More projects</button>
+                </div>
                 
               </div>
-              <div class="section_btn">
-                  <button class="view_button">More projects</button>
-              </div>
-              
-            </section>
-          
+             
+          </section>
 
-
-          <!-- Skills -->
+         <!-- Skills -->
             <!-- 
             <section>
               <h2 class="section-heading">Skills</h2>
@@ -331,98 +351,64 @@
               </ul>
             </section>
            -->
-          
-          <section class="skills">
-             <h2 class="section-heading">Skills</h2>
+         <section id="skills" class="page-section">
             
-            <div class="skill">
-              <h4>Frontend</h4>:
-               
-                <div class="skill_list">
-                    <span>HTML/CSS</span> <span>JavaScript</span> <span>React</span> <span>NextJS</span> <span>Vue</span>
-                </div>
-                <span class="dots"> . . .</span>
-               
-            </div>
-            
-            <div class="skill">
-              <h4>Backend</h4>:
-               
-                <div class="skill_list">
-                    <span>Java</span> <span>NodeJS</span> <span>NextJS</span> <span>Python</span> <span>C++</span> <span>C#</span> <span>PHP</span> <span>Kotlin</span> <span>Ruby</span> <span>APIs</span>
-                </div>
-                <span class="dots"> . . .</span>
-               
-            </div>
-            
-            <div class="skill">
-              <h4>Databases</h4>:
-               
-                <div class="skill_list">
-                    <span>Oracle</span> <span>SQL-Server</span> <span>MySQL/MariaDB</span> <span>PostgreSQL</span> <span>MongoDB</span> <span>ORMs</span>
-                </div>
-                <span class="dots"> . . .</span>
-               
-            </div>
-            
-            <div class="skill">
-              <h4>Tools</h4>:
-               
-                <div class="skill_list">
-                    <span>Git/GitHub</span> <span>CI/CD automations</span> <span>Docker</span> <span>kubernetes</span> <span>AI technologies</span> <span>Figma</span> <span>AWS</span>
-                </div>
-                <span class="dots"> . . .</span>
-               
-            </div>
-            
-              </section>
-          
+              <div class="project_container">
+                <h1 class="section-heading">Skills</h1>
+                <div class="skills">
+                  
+                    <div class="skill">
+                      <h4>Frontend</h4>:
+                       
+                        <div class="skill_list">
+                           <span>HTML/CSS</span> <span>JavaScript</span> <span>React</span> <span>NextJS</span> <span>Vue</span>
+                        </div>
+                        <span class="dots"> . . .</span>
+                      
+                    </div>
+                  
+                    <div class="skill">
+                      <h4>Backend</h4>:
+                       
+                        <div class="skill_list">
+                           <span>Java</span> <span>NodeJS</span> <span>NextJS</span> <span>Python</span> <span>C++</span> <span>C#</span> <span>PHP</span> <span>Kotlin</span> <span>Ruby</span> <span>APIs</span>
+                        </div>
+                        <span class="dots"> . . .</span>
+                      
+                    </div>
+                  
+                    <div class="skill">
+                      <h4>Databases</h4>:
+                       
+                        <div class="skill_list">
+                           <span>Oracle</span> <span>SQL-Server</span> <span>MySQL/MariaDB</span> <span>PostgreSQL</span> <span>MongoDB</span> <span>ORMs</span>
+                        </div>
+                        <span class="dots"> . . .</span>
+                      
+                    </div>
+                  
+                    <div class="skill">
+                      <h4>Tools</h4>:
+                       
+                        <div class="skill_list">
+                           <span>Git/GitHub</span> <span>CI/CD automations</span> <span>Docker</span> <span>kubernetes</span> <span>AI technologies</span> <span>Figma</span> <span>AWS</span>
+                        </div>
+                        <span class="dots"> . . .</span>
+                      
+                    </div>
+                  
+                </div>                
+              </div>
+             
+          </section>
 
-
-          <!-- Volunteer work -->
+        <!-- Education -->
+         <section id="education" class="page-section">
           
-            <section>
-              <h2 class="section-heading">Volunteer Experience</h2>
-              
-                <section>
-                  <h3>
-                    
-                      Computer Assistance at <a href="https://www.heritage-point.com/">Heritage Point Assisted Living</a>
-                    
-                  </h3>
-                  
-                    <p class="section-label">2012 - 2015</p>
-                  
-                  <p>Helped residents with any computer problems for two hours each week. Mainly helped with networking, typing, basic instruction, and troubleshooting.</p>
-                  
-                </section>
-              
-                <section>
-                  <h3>
-                    
-                      Student Ambassador at <a href="https://marshall.edu">Marshall University</a>
-                    
-                  </h3>
-                  
-                    <p class="section-label">2007 - 2008</p>
-                  
-                  <p>Gave campus tours, organized promotional events, and ran summer orientation.</p>
-                  
-                </section>
-              
-            </section>
-          
-
-          
-
-        </main>
-       <!-- Sidebar Section -->
-        <aside>
-          
-            <section>
+            <div class="education">
               <h2 class="section-heading">Education</h2>
               
-                <section>
+                <div>
                   <h3>
                     
                       <a href="https://marshall.edu">Marshall University</a>
@@ -448,20 +434,65 @@
                       <span class="block">Graduation Date: 2010</span>
                     </p>
                   
-                </section>
+                </div>
               
-            </section>
+            </div>
           
+         </section>
 
-         
-
+        <!-- Volunteer work-->
+         <section id="volunteer" class="page-section">
           
-
+            <div class="volunteer">
+              <h2 class="section-heading">Volunteer Experience</h2>
+              
+                <div>
+                  <h3>
+                    
+                      Computer Assistance at <a href="https://www.heritage-point.com/">Heritage Point Assisted Living</a>
+                    
+                  </h3>
+                  
+                    <p class="section-label">2012 - 2015</p>
+                  
+                  <p>Helped residents with any computer problems for two hours each week. Mainly helped with networking, typing, basic instruction, and troubleshooting.</p>
+                  
+                </div>
+              
+                <div>
+                  <h3>
+                    
+                      Student Ambassador at <a href="https://marshall.edu">Marshall University</a>
+                    
+                  </h3>
+                  
+                    <p class="section-label">2007 - 2008</p>
+                  
+                  <p>Gave campus tours, organized promotional events, and ran summer orientation.</p>
+                  
+                </div>
+              
+            </div>
           
-            <section>
+         </section>
+
+        <!-- References -->
+         <section id="reference" class="page-section">
+          
+         </section>
+
+        <!-- Languages -->
+         <section id="languages" class="page-section">
+          
+         </section>
+
+        <!-- Interests -->
+         <section id="interest" class="page-section">
+           
+            <div class="interests">
               <h2 class="section-heading">Interests</h2>
               
-                <section>
+                <div>
                   <h3>Woodworking</h3>
                   
                   
@@ -485,62 +516,127 @@
                       
                     </div>
                   
-                </section>
+                </div>
               
-            </section>
+            </div>
           
-        </aside>
+         </section>
 
-    </div>
+        <!-- Projects -->
+         <section id="contact" class="page-section">
+          <h3>Contacts</h3>
+         </section>      
+
+  </div>
+</div>
 
      </main>
-      <footer class="page-footer">
-      <div class="container">
+
+      <footer >
+        
+      <div class="page-footer">
+        <div class="footer_logo">
+            <a href="index.html"><img src="img/dh.png" alt="logo"></a>
+            <p>Building solutions for your business </p>
+        </div>
+         
         <!-- Social media links -->
               
-              <ul class="social_liks">
+              <div class="footer_social_links"> 
+                <ul class="social_liks">
                 
                   <li><a href="https://seena2.github.io/" rel="noopener noreferrer" aria-label="Seena2.com" class="link-with-icon">
-                      
+                      <svg aria-hidden="true"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img"
+     width="16"
+     height="16"
+     fill="currentColor"
+     class="bi bi-globe-americas"
+     viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+</svg>
+
                       Seena2.com
                     </a>
                   </li>
-               
                 
-                  <li><a href="https://youtube.com/c/coreyms" rel="noopener noreferrer" aria-label="Linkdin" class="link-with-icon">
-                      
+                  <li><a href="https://www.linkedin.com/in/dinku-hamda" rel="noopener noreferrer" aria-label="Linkdin" class="link-with-icon">
+                      <svg aria-hidden="true"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img"
+     width="16"
+     height="16"
+     fill="currentColor"
+     class="bi bi-youtube"
+     viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+</svg>
+
                       Linkdin
                     </a>
                   </li>
-               
                 
                   <li><a href="https://www.github.com/Seena2" rel="noopener noreferrer" aria-label="Github" class="link-with-icon">
-                      
+                      <svg aria-hidden="true"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img"
+     width="16"
+     height="16"
+     fill="currentColor"
+     class="bi bi-github"
+     viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+</svg>
+
                       Github
                     </a>
                   </li>
-               
                 
                   <li><a href="https://youtube.com" rel="noopener noreferrer" aria-label="YouTube" class="link-with-icon">
-                      
+                      <svg aria-hidden="true"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img"
+     width="16"
+     height="16"
+     fill="currentColor"
+     class="bi bi-youtube"
+     viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+</svg>
+
                       YouTube
                     </a>
                   </li>
-               
                 
-                  <li><a href="https://www.instagram.com/coreymschafer" rel="noopener noreferrer" aria-label="Instagram" class="link-with-icon">
-                      
+                  <li><a href="https://www.instagram.com" rel="noopener noreferrer" aria-label="Instagram" class="link-with-icon">
+                      <svg aria-hidden="true"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img"
+     width="16"
+     height="16"
+     fill="currentColor"
+     class="bi bi-instagram"
+     viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+</svg>
+
                       Instagram
                     </a>
                   </li>
-               
                 
-              </ul>
+               </ul>
+              </div>
             
-        <p>© 2026 Dinku Hamda. All rights reserved.</p>
       </div>
+       <p class="copyright">© 2026 Dinku Hamda, All rights reserved.</p>
     </footer>
 
-    <script src="js/app.js"></script>
+
+
+    <script src="js/main.js"></script>
+    
+    
+
 </body>
 </html>

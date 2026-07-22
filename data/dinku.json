@@ -13,17 +13,16 @@
     "I am professional software engineer with 15+ years of hands-on job experience in designing, developing, maintaining and shipping high-quality, reliable, scalable and performant applications while providing leadership, guidance, and technical direction within development teams.",
     "My goal is to empower people and businesses by transforming business requirements into robust, scalable and usable applications that solves real-world problems, improves lives, and drives innovation."
   ],
-   "url": "https://coreyms.com",
+  "url": "https://seena2.github.io",
   "social_links": [
     {
       "label": "Seena2.com",
       "url": "https://seena2.github.io/",
       "svg_path": "img/globe.svg"
     },
-     {
+    {
       "label": "Linkdin",
-       "linkdin": "https://www.linkedin.com/in/dinku-hamda",
-      "url": "https://youtube.com/c/coreyms",
+      "url": "https://www.linkedin.com/in/dinku-hamda",
       "svg_path": "img/youtube.svg"
     },
     {
@@ -33,12 +32,12 @@
     },
     {
       "label": "YouTube",
-      "url": "https://youtube.com", 
+      "url": "https://youtube.com",
       "svg_path": "img/youtube.svg"
     },
     {
       "label": "Instagram",
-      "url": "https://www.instagram.com/coreymschafer",
+      "url": "https://www.instagram.com",
       "svg_path": "img/instagram.svg"
     }
   ],
@@ -46,7 +45,7 @@
     {
       "position": "Lead software Engineer",
       "company": "Furtu Solutions",
-      "location" :"",
+      "location": "",
       "url": "",
       "start_date": "oct, 2024",
       "end_date": "Present",
@@ -63,7 +62,7 @@
     {
       "position": "Software Engineer",
       "company": "EVA-HEARD",
-      "location" :"",
+      "location": "",
       "url": " ",
       "start_date": "Oct, 2020",
       "end_date": "Oct,2024",
@@ -82,7 +81,7 @@
     {
       "position": "Full-stack developer",
       "company": "BOLSA",
-      "location" :"",
+      "location": "",
       "url": " ",
       "start_date": "Dec, 2018",
       "end_date": "Oct,2020",
@@ -97,7 +96,7 @@
     {
       "position": "MIS Officer",
       "company": "SCT-UNICEF",
-      "location" :"",
+      "location": "",
       "url": " ",
       "start_date": "Dec, 2014",
       "end_date": "Dec,2018",
@@ -115,7 +114,7 @@
     {
       "position": "Programmer",
       "company": "OLSA-INSA",
-      "location" :"",
+      "location": "",
       "url": " ",
       "start_date": "Sep, 2009",
       "end_date": "Dec,2014",
@@ -134,7 +133,7 @@
       "summary": " A model that  utilizes deep learning and NLP to detect fake news.",
       "url": "",
       "highlights": ["Reaserch work"],
-      "thumbnail":"img/project1.png",
+      "thumbnail": "img/project1.png",
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -154,10 +153,12 @@
       "title": "Article Tracking system",
       "summary": " An app that allows authors, editors and reviewer interact in real time.",
       "url": "https://barru.com",
-      "highlights": ["authors submit and track their own manuscripts", 
-            "editors  manage manuscripts and asign reviewers anonymously", 
-            "reveiwers to reveiw and comment articles "],
-      "thumbnail":"img/project1.png",
+      "highlights": [
+        "authors submit and track their own manuscripts",
+        "editors  manage manuscripts and asign reviewers anonymously",
+        "reveiwers to reveiw and comment articles "
+      ],
+      "thumbnail": "img/project1.png",
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -174,13 +175,15 @@
       ]
     },
     {
-        "title": "Patient management system",
+      "title": "Patient management system",
       "summary": " An app that allows Doctors to manage patient data, diagnosis, prescriptions and follow ups.",
       "url": "https://pms.com",
-      "highlights": ["Doctors diagnosis the patient and store the finding and prescriptions", 
-            "Lab technitians run tests and register the result and attach scan files", 
-            "receptions register new or check appointment of follow up patients  "],
-      "thumbnail":"img/project1.png",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -253,22 +256,48 @@
       "proficiency_label": "Comfortable"
     }
   ],
-  "skills2":[
+  "skills2": [
     {
-      "name":"Frontend",
+      "name": "Frontend",
       "technologies": ["HTML/CSS", "JavaScript", "React", "NextJS", "Vue"]
     },
     {
-      "name":"Backend",
-      "technologies": ["Java", "NodeJS","NextJS", "Python", "C++", "C#", "PHP", "Kotlin", "Ruby", "APIs"]
+      "name": "Backend",
+      "technologies": [
+        "Java",
+        "NodeJS",
+        "NextJS",
+        "Python",
+        "C++",
+        "C#",
+        "PHP",
+        "Kotlin",
+        "Ruby",
+        "APIs"
+      ]
     },
     {
-      "name":"Databases",
-      "technologies": ["Oracle", "SQL-Server", "MySQL/MariaDB", "PostgreSQL", "MongoDB", "ORMs"]
+      "name": "Databases",
+      "technologies": [
+        "Oracle",
+        "SQL-Server",
+        "MySQL/MariaDB",
+        "PostgreSQL",
+        "MongoDB",
+        "ORMs"
+      ]
     },
     {
-      "name":"Tools",
-      "technologies": ["Git/GitHub","CI/CD automations", "Docker", "kubernetes",  "AI technologies", "Figma", "AWS"]
+      "name": "Tools",
+      "technologies": [
+        "Git/GitHub",
+        "CI/CD automations",
+        "Docker",
+        "kubernetes",
+        "AI technologies",
+        "Figma",
+        "AWS"
+      ]
     }
   ],
 

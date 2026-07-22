@@ -12,11 +12,11 @@ data["current_year"] =datetime.now(tz=UTC).year
 
 # Social media icons, to embed the svg file in the html, 
 # open the svg files and store the content into new key(svg_data)
-# if "social_links" in data:
-#     for link in data["social_links"]:
-#         if link.get("svg_path"):
-#             with Path(link["svg_path"]).open(encoding="utf-8") as svg_file:
-#                 link["svg_data"] = svg_file.read()
+if "social_links" in data:
+    for link in data["social_links"]:
+        if link.get("svg_path"):
+            with Path(link["svg_path"]).open(encoding="utf-8") as svg_file:
+                link["svg_data"] = svg_file.read()
 
 # Setup Jinja environment by specifying the location of the templates
 env = Environment(loader= FileSystemLoader("templates"), autoescape=True)

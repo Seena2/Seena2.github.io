@@ -1,31 +1,45 @@
 {% extends "_base.html" %}
 {% block title %}{{name}} - {{ title }}{% endblock %}
 {% block content %}
-    
-    <div class="container">
-        <main class="main_content">
-          <!-- Summary -->
-            {% if summary %}
-            <section class="summary">
-                <h2 class="section-heading">About me</h2>
-                 {% for para in summary %}
-                <p class="summary_paragraph">{{ para }}</p>
-                 {% endfor %}
-            </section>
-            {% endif %}
 
-            <!-- Experiance -->
-             {% if work_experience %}
-            <section>
-              <h2 class="section-heading">Work Experience</h2>
-              {% for job in work_experience %}
-                <section>
-                  <div class="job_title">
-                    {% if job.position %}
-                      <h3 >{{job.position}}</h3>
-                     {% endif %}
-                    <div class="job_company">
-                        <div class="">
+<div class="portfolio-container">
+  <aside class="sidebar">
+    <ul class="sidebar_nav">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#experiance">Experiance</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#interest">Interest</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+  </aside>
+  <div class="right_container">
+        <!-- Summary -->
+        <section id="about" class="page-section">
+               {% if summary %}
+                <div class="summary">
+                     <h1 class="section-heading">About me</h1>
+                      {% for para in summary %}
+                      <p class="summary_paragraph">{{ para }}</p>
+                {% endfor %}
+                 </div>
+            {% endif %}
+        </section>
+
+        <!-- Experiance -->
+        <section id="experiance" class="page-section">
+            {% if work_experience %}
+            <div class="experiances">
+            <h1 class="section-heading">Work Experience</h1>
+            {% for job in work_experience %}
+                <div class="job">
+                   {% if job.position %} <h3 class="sub_heading">{{job.position}}</h3> {% endif %}
+                   <div class="job_company">
+                        <div class="company_name">
                           {% if job.url and job.location %}
                               {{ job.company }} ( <a href="{{ job.url }}">{{ job.company }}</a> )
                               {% if job.location %}  | <span>{{job.location}}</span>  {% endif %}
@@ -38,55 +52,58 @@
                            <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
                             {% endif %}
                         </div>
-                    </div>
-                    
                   </div>
                   {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
                   {% if job.highlights %}
-                    <ul class="job_highlights">
+                  <div class="job_highlight">
+                    <ul>
                       {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
                     </ul>
+                    </div>
                   {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
+                     
+                 </div>
+            {% endfor %}
+            </div>
+            {% endif %}
+        </section>
 
-          <!-- Projects -->
-           {% if projects %}
-            <section>
-              <h2 class="section-heading">Projects</h2>
-              <p>Some of my projects,</p>
-              <div class="projects">
-                {% for project in projects %}
-                  <div class="card">
-                    <figure>
-                          <img src="{{project.thumbnail}}" alt="" srcset="" width="300" height="150">
-                    </figure>
-                    <div class="discription">
-                      <h4>{{project.title}}</h4>
-                      {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-                        {% if project.highlights %}
-                        <ul>
-                         {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                        </ul>
-                      {% endif %}
-                   </div>
-                   <div class="card_btn">
-                    <button>view details</button>
-                   </div>
-                   </div>
-                {% endfor %}
+        <!-- Projects -->
+         <section id="projects" class="page-section">
+            {% if projects %}
+              <div class="project_container">
+                <h1 class="section-heading">Projects</h1>
+                <p>Some of my projects,</p>
+                <div class="projects">
+                  {% for project in projects %}
+                    <div class="card">
+                      <figure>
+                            <img src="{{project.thumbnail}}" alt="" srcset="" width="300" height="150">
+                      </figure>
+                      <div class="discription">
+                        <h4>{{project.title}}</h4>
+                        {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                          {% if project.highlights %}
+                          <ul>
+                          {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                          </ul>
+                        {% endif %}
+                    </div>
+                    <div class="card_btn">
+                      <button>view details</button>
+                    </div>
+                    </div>
+                  {% endfor %}
+                </div>
+                <div class="section_btn">
+                    <button class="view_button">More projects</button>
+                </div>
+                
               </div>
-              <div class="section_btn">
-                  <button class="view_button">More projects</button>
-              </div>
-              
-            </section>
-          {% endif %}
+             {% endif %}
+          </section>
 
-
-          <!-- Skills -->
+         <!-- Skills -->
             <!-- {% if skills %}
             <section>
               <h2 class="section-heading">Skills</h2>
@@ -108,76 +125,34 @@
               </ul>
             </section>
           {% endif %} -->
-          {% if skills2 %}
-          <section class="skills">
-             <h2 class="section-heading">Skills</h2>
-            {% for skill in skills2 %}
-            <div class="skill">
-              <h4>{{skill.name}}</h4>:
-              {% if skill.technologies %} 
-                <div class="skill_list">
-                   {% for tech in skill.technologies %} <span>{{tech}}</span>{% endfor %}
-                </div>
-                <span class="dots"> . . .</span>
-              {% endif %} 
-            </div>
-            {% endfor %}
-              </section>
-          {% endif %}
+         <section id="skills" class="page-section">
+            {% if projects %}
+              <div class="project_container">
+                <h1 class="section-heading">Skills</h1>
+                <div class="skills">
+                  {% for skill in skills2 %}
+                    <div class="skill">
+                      <h4>{{skill.name}}</h4>:
+                      {% if skill.technologies %} 
+                        <div class="skill_list">
+                          {% for tech in skill.technologies %} <span>{{tech}}</span>{% endfor %}
+                        </div>
+                        <span class="dots"> . . .</span>
+                      {% endif %}
+                    </div>
+                  {% endfor %}
+                </div>                
+              </div>
+             {% endif %}
+          </section>
 
-
-          <!-- Volunteer work -->
-          {% if volunteer_experience %}
-            <section>
-              <h2 class="section-heading">Volunteer Experience</h2>
-              {% for vol in volunteer_experience %}
-                <section>
-                  <h3>
-                    {% if vol.url %}
-                      {{ vol.position }} at <a href="{{ vol.url }}">{{ vol.organization }}</a>
-                    {% else %}
-                      {{ vol.position }} at {{ vol.organization }}
-                    {% endif %}
-                  </h3>
-                  {% if vol.start_date and vol.end_date %}
-                    <p class="section-label">{{ vol.start_date }} - {{ vol.end_date }}</p>
-                  {% endif %}
-                  {% if vol.summary %}<p>{{ vol.summary }}</p>{% endif %}
-                  {% if vol.highlights %}
-                    <ul>
-                      {% for highlight in vol.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-
-          {% if references %}
-            <section>
-              <h2 class="section-heading">References</h2>
-              {% for ref in references %}
-                <section>
-                  {% if ref.name %}<h3>{{ ref.name }}</h3>{% endif %}
-                  {% if ref.relation %}<p class="section-label">{{ ref.relation }}</p>{% endif %}
-                  {% if ref.reference %}
-                    <blockquote>
-                      {{ ref.reference }}
-                    </blockquote>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-
-        </main>
-       <!-- Sidebar Section -->
-        <aside>
+        <!-- Education -->
+         <section id="education" class="page-section">
           {% if education %}
-            <section>
+            <div class="education">
               <h2 class="section-heading">Education</h2>
               {% for edu in education %}
-                <section>
+                <div>
                   <h3>
                     {% if edu.url %}
                       <a href="{{ edu.url }}">{{ edu.institution }}</a>
@@ -205,15 +180,65 @@
                       {% if edu.graduation_date %}<span class="block">Graduation Date: {{ edu.graduation_date }}</span>{% endif %}
                     </p>
                   {% endif %}
-                </section>
+                </div>
               {% endfor %}
-            </section>
+            </div>
           {% endif %}
+         </section>
 
-         
+        <!-- Volunteer work-->
+         <section id="volunteer" class="page-section">
+          {% if volunteer_experience %}
+            <div class="volunteer">
+              <h2 class="section-heading">Volunteer Experience</h2>
+              {% for vol in volunteer_experience %}
+                <div>
+                  <h3>
+                    {% if vol.url %}
+                      {{ vol.position }} at <a href="{{ vol.url }}">{{ vol.organization }}</a>
+                    {% else %}
+                      {{ vol.position }} at {{ vol.organization }}
+                    {% endif %}
+                  </h3>
+                  {% if vol.start_date and vol.end_date %}
+                    <p class="section-label">{{ vol.start_date }} - {{ vol.end_date }}</p>
+                  {% endif %}
+                  {% if vol.summary %}<p>{{ vol.summary }}</p>{% endif %}
+                  {% if vol.highlights %}
+                    <ul>
+                      {% for highlight in vol.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+         </section>
 
+        <!-- References -->
+         <section id="reference" class="page-section">
+          {% if references %}
+            <div class="references">
+              <h2 class="section-heading">References</h2>
+              {% for ref in references %}
+                <div>
+                  {% if ref.name %}<h3>{{ ref.name }}</h3>{% endif %}
+                  {% if ref.relation %}<p class="section-label">{{ ref.relation }}</p>{% endif %}
+                  {% if ref.reference %}
+                    <blockquote>
+                      {{ ref.reference }}
+                    </blockquote>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+         </section>
+
+        <!-- Languages -->
+         <section id="languages" class="page-section">
           {% if languages %}
-            <section>
+            <div class="languages">
               <h2 class="section-heading">Languages</h2>
               <ul class="unstyled-list">
                 {% for lang in languages %}
@@ -223,14 +248,17 @@
                   </li>
                 {% endfor %}
               </ul>
-            </section>
+            </div>
           {% endif %}
+         </section>
 
-          {% if interests %}
-            <section>
+        <!-- Interests -->
+         <section id="interest" class="page-section">
+           {% if interests %}
+            <div class="interests">
               <h2 class="section-heading">Interests</h2>
               {% for interest in interests %}
-                <section>
+                <div>
                   <h3>{{ interest.name }}</h3>
                   {% if interest.summary %}<p>{{ interest.summary }}</p>{% endif %}
                   {% if interest.images %}
@@ -246,11 +274,17 @@
                       {% endfor %}
                     </div>
                   {% endif %}
-                </section>
+                </div>
               {% endfor %}
-            </section>
+            </div>
           {% endif %}
-        </aside>
+         </section>
 
-    </div>
+        <!-- Projects -->
+         <section id="contact" class="page-section">
+          <h3>Contacts</h3>
+         </section>      
+
+  </div>
+</div>
 {% endblock %}
