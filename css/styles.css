@@ -293,7 +293,7 @@ nav{
   li a{
     padding: 0.5rem ;
     color: var(--color-dark-blue);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
   }
    li a:hover{
@@ -304,7 +304,7 @@ nav{
 
 /* PORTFOLIO PAGE */
 .portfolio-container{
-  width: 90%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
  
@@ -313,10 +313,14 @@ nav{
 .sidebar{
   background-color: var(--color-dark-blue);
 }
+.sidebar{
+  display: none;
+  scroll-behavior: smooth;
+}
 .sidebar_nav{
-  position: sticky;
-  top: 200;
-  width: 15rem;
+  position: sticky; /* for this o work the parent must be a div and have space */
+  top: 100px;
+  width: 14rem;
   list-style: none;
   margin-top: 3rem;
  li a{
@@ -335,10 +339,223 @@ nav{
   text-align: justify;
 }
 
-
-.experiances, .projects, .skills,.education, .volunteer,.references,.languages,.interests{
-  display: none;
+/* About section */
+section {
+  width: 100%;
+  min-height: fit-content;
+ 
 }
+.section-container {
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+  p{
+    text-align: justify;
+    margin-top: 1rem;
+  }
+}
+.section-heading{
+    font-size: 1.2rem;
+    /* padding-bottom: 0.3rem; */
+    border-bottom: 0.3rem solid var(--color-primary);
+    width: fit-content;
+    padding-right: 2rem;
+     margin-top: 5rem;
+  }
+
+/* Experiance */
+.experiances{
+  margin-top: 5rem;
+}
+.job_title{
+  font-size: 1rem;
+  color: var(--color-dark-blue);
+  margin-top: 1rem;
+}
+.job_company{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-lightGray-2);
+  font-style: italic;
+  font-weight: 400;
+  padding: 0.3rem;
+}
+.company_name{
+  display: flex;
+}
+.job_highlight{
+  margin: 1rem;
+  margin-left: 2rem;
+  li{
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Projects */
+
+.project_container{
+  display: grid;
+  grid-template-columns:  1fr;
+  margin-top: 1rem;
+  gap: 1rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.card,.card_description{
+  background-color: var(--color-lightGray-2);
+  /* border: 1px solid var(--color-lightGray-2); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.card_img{
+width: 100%;
+.cardImage{
+  width: 100%;
+}
+.cardImage:hover{
+  
+}
+}
+
+.card_description{
+  padding: 0 1rem;
+  .image_caption{
+    font-weight: 600;
+    text-align: center;
+  }
+  .card_summary{
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+ .card_button{
+    width: 100%;
+    position: relative;
+    margin: 1rem 0;
+    button{
+      width: 100%;
+      padding: 0.5rem;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 0;
+      border: none;
+      background-color: var(--color-primary);
+      border: 1px solid var(--color-primary-shade);
+      color: var(--color-white);
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: var(--color-primary-shade);
+    }
+  }
+.section_button{
+  width: 100%;
+  
+  a{
+  width: 100%;
+  padding: 0.2rem;
+  background-color: var(--color-dark-blue);
+  border: 1px solid var(--color-primary-shade);
+   font-size: 1.2rem;
+  text-align: center;
+  border-radius: 5px;
+    color: var(--color-white);
+  }
+  a:hover{
+    background-color: var(--color-white);
+    color: var(--color-dark-blue);
+  }
+}
+
+/* Skills section */
+.skill{
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  h5{
+    font-size: 1rem;
+  }
+}
+.skill_list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+ border-bottom: 1px solid var(--color-lightGray-1);
+ padding-bottom: 0.5rem;
+  
+  span{
+    background-color: var(--color-lightGray-2);
+    border: 1px solid var(--color-lightGray-1);
+    padding: 0.2rem 0.4rem ;
+    border-radius: 0.6rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  span:hover{
+    cursor: pointer;
+    background-color: var(--color-white);
+  }
+}
+
+/* Education */
+.edu{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  h5{
+    font-size: 1rem;
+  }
+}
+.school{
+  display: flex;
+  gap:1rem;
+}
+.school_location{
+  font-size: 1rem;
+}
+
+/* Volunteer */
+.voluteered_at{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  font-style: italic;
+  h3{
+    font-size: 1rem;
+  }
+}
+.activities{
+  margin-left: 2rem;
+}
+
+/* Contact */
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section_description{
+  margin: 1rem;
+}
+.contact_address{
+  a{
+    color: var(--color-primary);
+  }
+}
+
 
 
 
@@ -436,11 +653,14 @@ footer{
   .desktop_menu{
     display: flex;
   }
-  .left{
+  
+  .sidebar{
   display: flex;
   flex-direction: column;
   }
-  
+  .project_container{
+  grid-template-columns: repeat(3, 1fr);
+}
  
 }
 /*Styles for screens 1024px and wider (e.g., small laptops, desktops) */
