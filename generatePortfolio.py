@@ -23,18 +23,35 @@ env = Environment(loader= FileSystemLoader("templates"), autoescape=True)
 base_template=env.get_template("_base.html")
 index_template=env.get_template("index_template.html")
 resume_template=env.get_template("resume_template.html")
+projects_template=env.get_template("projects_template.html")
+blogs_template=env.get_template("blogs_template.html")
+courses_template=env.get_template("courses_template.html")
+contact_template=env.get_template("contact_template.html")
 
 # Render the template with data
-index_ouput = index_template.render(**data) # '**data'=> unpack the dictionary and pass to the tempalte ( allows u to use {{name}} instead of {{data.name}})
-resume_ouput = resume_template.render(**data)
+index_output = index_template.render(**data) # '**data'=> unpack the dictionary and pass to the tempalte ( allows u to use {{name}} instead of {{data.name}})
+resume_output = resume_template.render(**data)
+projects_output = projects_template.render(**data)
+blogs_output = blogs_template.render(**data)
+courses_output = courses_template.render(**data)
+contact_output = contact_template.render(**data)
+
 # This is equivalent to...
 # index_output = index_template.render(name=data["name"], label=data["label"]...)
 # resume_output = resume_template.render(name=data["name"], label=data["label"]...)
 
 # Write the output(rendered using jinja) to HTML file
 with Path("index.html").open("w", encoding="utf-8") as f:
-    f.write(index_ouput)
+    f.write(index_output)
 with Path("resume.html").open("w", encoding="utf-8") as f:
-    f.write(resume_ouput)
+    f.write(resume_output)
+with Path("projects.html").open("w", encoding="utf-8") as f:
+    f.write(projects_output)
+with Path("blogs.html").open("w", encoding="utf-8") as f:
+    f.write(blogs_output)
+with Path("courses.html").open("w", encoding="utf-8") as f:
+    f.write(courses_output)
+with Path("contact.html").open("w", encoding="utf-8") as f:
+    f.write(contact_output)
 
 print("HTML file generated successfully")

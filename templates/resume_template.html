@@ -1,101 +1,116 @@
 {% extends "_base.html" %}
 {% block title %}{{name}} - {{ title }}{% endblock %}
 {% block content %}
-    
-    <div class="container">
-        <main>
-          {% if work_experience %}
-            <section>
-              <h2 class="section-heading">Work Experience</h2>
-              {% for job in work_experience %}
-                <section>
-                  <h3>
-                    {% if job.url %}
-                      {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
-                    {% else %}
-                      {{ job.position }} at {{ job.company }}
-                    {% endif %}
-                  </h3>
-                  {% if job.start_date and job.end_date %}
-                    <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
-                  {% endif %}
+
+<div class="portfolio-container">
+  
+  <div class="right_container">
+        <!-- Summary -->
+        <section id="about" class="section-container">
+               {% if summary %}
+                <div class="summary">
+                     <h4 class="section-heading">About me</h4>
+                      {% for para in summary %}
+                      <p class="summary_paragraph">{{ para }}</p>
+                {% endfor %}
+                 </div>
+            {% endif %}
+        </section>
+
+        <!-- Experiance -->
+        <section id="experiance" class="section-container">
+            {% if work_experience %}
+            <div class="experiances">
+            <h4 class="section-heading">Work Experience</h4>
+            {% for job in work_experience %}
+                <div class="job">
+                   {% if job.position %} <h5 class="job_title">{{job.position}}</h5> {% endif %}
+                   <div class="job_company">
+                      <div class="company_name">
+                        {% if job.url and job.location %}
+                              {{ job.company }} ( <a href="{{ job.url }}">{{ job.company }}</a> )
+                              {% if job.location %}  | <span>{{job.location}}</span>  {% endif %}
+                          {% else %}
+                              {{ job.company }}
+                          {% endif %}
+                      </div> 
+                      <div class="year">
+                         {% if job.start_date and job.end_date %}
+                           <span class="section-label">{{ job.start_date }} - {{ job.end_date }}</span>
+                            {% endif %}
+                      </div>
+                  </div>
                   {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
                   {% if job.highlights %}
+                  <div class="job_highlight">
                     <ul>
                       {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
                     </ul>
+                  </div>
                   {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
+                     
+                 </div>
+            {% endfor %}
+            </div>
+            {% endif %}
+        </section>
 
-          {% if projects %}
-            <section>
-              <h2 class="section-heading">Projects</h2>
-              {% for project in projects %}
-                <section>
-                  <h3>
-                    {% if project.url %}
-                      <a href="{{ project.url }}">{{ project.title }}</a>
+       
+
+
+          <section id="skills" class="section-containers">
+               {% if skills2 %}
+                <div class="skills">
+                     <h4 class="section-heading">Skills</h4>
+                      <div class="skillset">
+                        {% for skill in skills2 %}
+                        <div class="skill">
+                            <h5>{{ skill.name }}</h5>
+                           {% if skill.technologies %} 
+                          <div class="skill_list">
+                            {% for tech in skill.technologies %} <span>{{tech}}</span>{% endfor %}
+                          </div>
+                           <span class="dots"> . . .</span>
+                           {% endif %}
+                        </div>
+                        {% endfor %}
+                        </div>        
+                 </div>
+            {% endif %}
+        </section>
+        
+
+        <!-- Education -->
+         <section id="education" class="section-containers">
+          {% if education %}
+            <div class="education">
+              <h4 class="section-heading">Education</h4>
+              {% for edu in education %}
+                <div class="edu">
+                  <div class="qualification">
+                       {% if edu.degree%}<h5 >{{edu.degree}}</h5> {% endif %}
+                  </div>
+                  
+                  <div class="schoolDetails">
+                    <div class="institution">
+                    {% if edu.url %}  <a href="{{ edu.url }}"> {{ edu.institution }}</a>
                     {% else %}
-                      {{ project.title }}
+                     | {{ edu.institution }}
                     {% endif %}
-                  </h3>
-                  {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-                  {% if project.highlights %}
-                    <ul>
-                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </section>
+                     {% if edu.location %}<p class="school_location">| {{ edu.location }}</p>{% endif %}
+                    </div>
+                     <div>{{edu.graduation_date}}</div>
+                  </div>
+                </div>
               {% endfor %}
-            </section>
+            </div>
           {% endif %}
-        </main>
+         </section>
 
-        <!-- Sidebar Section -->
-        <aside>
-          {% if languages %}
-            <section>
-              <h2 class="section-heading">Languages</h2>
-              <ul class="unstyled-list">
-                {% for lang in languages %}
-                  <li>
-                    <h3>{{ lang.language }}</h3>
-                    <p class="section-label">{{ lang.fluency }}</p>
-                  </li>
-                {% endfor %}
-              </ul>
-            </section>
-          {% endif %}
+         <section class="download_resume">
+           <a href="Dinku Hamda_Resume_26_new.pdf" download target="_blank"> Download resume</a>
+         </section>
 
-          {% if volunteer_experience %}
-            <section>
-              <h2 class="section-heading">Volunteer Experience</h2>
-              {% for vol in volunteer_experience %}
-                <section>
-                  <h3>
-                    {% if vol.url %}
-                      {{ vol.position }} at <a href="{{ vol.url }}">{{ vol.organization }}</a>
-                    {% else %}
-                      {{ vol.position }} at {{ vol.organization }}
-                    {% endif %}
-                  </h3>
-                  {% if vol.start_date and vol.end_date %}
-                    <p class="section-label">{{ vol.start_date }} - {{ vol.end_date }}</p>
-                  {% endif %}
-                  {% if vol.summary %}<p>{{ vol.summary }}</p>{% endif %}
-                  {% if vol.highlights %}
-                    <ul>
-                      {% for highlight in vol.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-        </aside>
-
-    </div>
+  </div>
+</div>
 {% endblock %}

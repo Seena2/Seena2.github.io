@@ -1,0 +1,76 @@
+{% extends "_base.html" %}
+{% block title %}{{name}} - {{ title }}{% endblock %}
+{% block content %}
+
+<div class="portfolio-container">
+  
+  <div class="right_container">
+       
+    
+
+        <!-- Contact -->
+         <section id="contact" class="page-section">
+           <h2 class="section-heading">Get in touch</h2>
+           <p class="section_description">Whether you have a question, want to collaborate, or just want to say
+               hi, feel free to reach out! I'm always open to discussing new ideas.</p>
+          <div class="form_container">
+            <div class="contact_address">
+              <h4 class="subtitle">Contact Information</h4>
+              <div class="contact_links">
+                 <h5>Email</h5>
+                  <a href="mailto:dinku22@gmail.com"  className=" " > dinku22@gmail.com </a>
+              </div>
+              <div class="contact_links">
+                 <h5>Phone</h5>
+                  <a href="tel:+1123456789" className=" transition-colors" > +1 (xxx)-xxx-xxx </a>
+              </div>
+              <div class="contact_links">
+                 <h5>Location</h5>
+                   <a className="transition-colors"> Finifine, Oromia </a>
+              </div>
+              <div class="contact_links">
+                 <h5>Connect</h5>
+                <div className="socialMediaLinks">
+                 {% if social_links %}
+                  <div class="connect"> 
+                    <ul class="">
+                    {% for link in social_links %}
+                      <li><a href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}" class="link-with-icon">
+                          {% if link.svg_data %}{{ link.svg_data | safe }}{% endif %}
+                          
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                  </div>
+            {% endif %}
+              </div>
+              </div>
+            </div>
+            <div class="contact_form_container">
+              <h4 class="subtitle">Send a message</h4>
+              <form className="contact_form">
+                <div class="form_group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" required class="" placeholder="Your name">
+                </div>
+                <div class="form_group">
+                  <label for="email">Email</label>
+                  <input type="email" id="name" required class="" placeholder="email@example.com">
+                </div>
+                <div class="form_group">
+                  <label for="message">Message</label>
+                  <textarea  id="message" required  placeholder="Hello there, I like to talk about ..."></textarea>
+                </div>
+                <div class="formButton">
+                  <button> Send message</button>
+                </div>
+                
+            </form>
+            </div>
+          </div>       
+         </section>      
+
+  </div>
+</div>
+{% endblock %}

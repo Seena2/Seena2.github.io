@@ -14,7 +14,6 @@
         <li><a href="#reference">Reference</a></li>
         <li><a href="#interest">Interest</a></li>
         <li><a href="#languages">Languages</a></li>
-        <li><a href="#contact">Contacts</a></li>
       </ul>
   </div>
   <div class="right_container">
@@ -75,7 +74,8 @@
                      <h4 class="section-heading">Projects</h4>
                      <div class="project_container">
                          {% for project in projects %}
-                            <div class="card">
+                         {% if project.selectedForHomePage %}
+                         <div class="card">
                               <div class="card_img">
                                 <figure>
                                   <img class="cardImage" src="{{project.thumbnail}}" alt="">
@@ -89,6 +89,8 @@
                                 <button class="">view details</button>
                               </div>
                             </div>
+                         {% endif %}
+                    
                          {% endfor %}
                      </div> 
                  </div>
@@ -126,8 +128,7 @@
                {% if skills2 %}
                 <div class="skills">
                      <h4 class="section-heading">Skills</h4>
-                      
-                      <div class="skills">
+                      <div class="skillset">
                         {% for skill in skills2 %}
                         <div class="skill">
                             <h5>{{ skill.name }}</h5>
@@ -155,20 +156,21 @@
               <h4 class="section-heading">Education</h4>
               {% for edu in education %}
                 <div class="edu">
-                  <div class="school">
-                       {% if edu.degree%}<h5>{{edu.degree}}</h5> {% endif %}
-                  <span>
-                    {% if edu.url %} | <a href="{{ edu.url }}"> {{ edu.institution }}</a>
+                  <div class="qualification">
+                       {% if edu.degree%}<h5 >{{edu.degree}}</h5> {% endif %}
+                  </div>
+                  
+                  <div class="schoolDetails">
+                    <div class="institution">
+                    {% if edu.url %}  <a href="{{ edu.url }}"> {{ edu.institution }}</a>
                     {% else %}
                      | {{ edu.institution }}
                     {% endif %}
-                  </span>
-                  {% if edu.location %}<p class="school_location">| {{ edu.location }}</p>{% endif %}
+                     {% if edu.location %}<p class="school_location">| {{ edu.location }}</p>{% endif %}
+                    </div>
+                     <div>{{edu.graduation_date}}</div>
                   </div>
-                 <span>{{edu.graduation_date}}</span>
-                  
                 </div>
-                
               {% endfor %}
             </div>
           {% endif %}
@@ -273,67 +275,7 @@
             </div>
           {% endif %}
          </section>
-
-       
-
-        <!-- Contact -->
-         <section id="contact" class="page-section">
-           <h2 class="section-heading">Get in touch</h2>
-        <p class="section_description">Whether you have a question, want to collaborate, or just want to say
-          hi, feel free to reach out! I'm always open to discussing new ideas.</p>
-          <div class="contact">
-            <div class="contact_address">
-              <h4>Contact Information</h4>
-              <div class="cont">
-                 <h5>Email</h5>
-                  <a href="mailto:dinku22@gmail.com"  className=" " > dinku22@gmail.com </a>
-              </div>
-              <div class="cont">
-                 <h5>Phone</h5>
-                  <a href="tel:+1123456789" className=" transition-colors" > +1 (xxx)-xxx-xxx </a>
-              </div>
-              <div class="cont">
-                 <h5>Location</h5>
-                   <a className="transition-colors"> Finifine, Oromia </a>
-              </div>
-              <div class="cont">
-                 <h5>Connect</h5>
-                    <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
-                  <Linkedin />Linkedin
-                </a>
-                <a href="#" target="_blank">
-                  <Twitter />Twitter
-                </a>
-                <a href="#" target="_blank">
-                  <Facebook />
-                </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-              </div>
-              </div>
-            </div>
-            <div class="contact_form">
-              <h4>Send a message</h4>
-              <form className="contact_form">
-                <div class="form_group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" required class="" placeholder="Your name">
-                </div>
-                <div class="form_group">
-                  <label for="email">Email</label>
-                  <input type="email" id="name" required class="" placeholder="email@example.com">
-                </div>
-                <div class="form_group">
-                  <label for="message">Message</label>
-                  <input type="email" id="message" required class="" placeholder="Hello there, I like to talk about ...">
-                </div>
-                <button> Send message</button>
-            </form>
-            </div>
-          </div>       
-         </section>      
+   
 
   </div>
 </div>

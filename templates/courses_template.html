@@ -6,21 +6,19 @@
  
   <div class="right_container">
        
-
-       
-
-        <!-- Projects -->
+        <!-- Courses -->
         <section id="projects" class="section-container">
-               {% if projects %}
+               {% if courses %}
                 <div class="projects">
-                     <h4 class="section-heading">Projects</h4>
+                     <h4 class="section-heading">Courses</h4>
                      <div class="projects_list">
-                         {% for project in projects %}
+                         {% for course in courses %}
                          <ul>
                           <li>
-                            {{project.title}}
+                            <span class="course_title">{{course.title}}</span>
+                            
                              <div class="projectDescription">
-                              <span>{{project.summary}}</span> <button>details</button>
+                              <span>{{course.summary}}</span> <button> enroll</button>
                              </div>
                           </li>
                          </ul>

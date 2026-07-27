@@ -134,6 +134,7 @@
       "url": "",
       "highlights": ["Reaserch work"],
       "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -159,6 +160,7 @@
         "reveiwers to reveiw and comment articles "
       ],
       "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -184,6 +186,85 @@
         "receptions register new or check appointment of follow up patients  "
       ],
       "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Dukkana",
+      "summary": " E-commerce app.",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "HRMs",
+      "summary": " Manager app.",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Carriage",
+      "summary": " Transporting items from location A to B",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
       "images": [
         {
           "img_path": "portfolio_media/yt1.png",
@@ -314,20 +395,328 @@
   ],
   "interests2": [
     {
-      "name": "Woodworking",
+      "name": "Football",
       "summary": "",
       "images": [
         {
           "img_path": "portfolio_media/ww1.jpg",
-          "caption": "Chess Board made from Walnut and Maple"
+          "caption": "Championship matches"
         },
         {
           "img_path": "portfolio_media/ww2.jpg",
-          "caption": "Wooden Necklace from Walnut Scrap"
+          "caption": "Interior design"
         }
       ]
     }
   ],
   "languages": [],
-  "references": []
+  "references": [],
+  "blogs": [
+    {
+      "title": " 10 things you must know before start coding",
+      "abstract": " Most novice people who are starting the software development career make mistakes of ...",
+      "url": "",
+      "highlights": ["software development tips"],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Setting up development environment",
+      "abstract": " Guide how to setup your development for smooth coding experiance.",
+      "url": "https://barru.com",
+      "highlights": [
+        "authors submit and track their own manuscripts",
+        "editors  manage manuscripts and asign reviewers anonymously",
+        "reveiwers to reveiw and comment articles "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Does the programming language we use matter when developing an app?",
+      "abstract": " The tech stack and language preference of the developement choices can be ...",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "What would i have done differently, when i first started a software development pathway",
+      "abstract": " Usaually the rabbit hole most begginer developers fall into  is, jumping between languages and tech stack before mastering one just becouse of what hear from other peers.",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Budget, quality and deadline, the biggest challenges in development",
+      "abstract": " The common constraints in developmets are ...",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "software development and AI tools",
+      "abstract": " using AI powered IDE and tools, can help developer attain the developmet goal, but there are tradeoff... ",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": " Fundamentals of Programming",
+      "summary": " This course covers the fundametal concepts of programming, and it is beggineer friendly ...",
+      "url": "",
+      "highlights": ["software development tips"],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Frontend basics",
+      "summary": " a crush course for frontent development and UI.",
+      "url": "https://barru.com",
+      "highlights": [
+        "authors submit and track their own manuscripts",
+        "editors  manage manuscripts and asign reviewers anonymously",
+        "reveiwers to reveiw and comment articles "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Introduction to Backend",
+      "summary": " covers the basics of backend deelopemnt",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "True",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Getting to know API's ",
+      "abstract": " What is API, and how do they work?.",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Fillstack: How does the frontend and Backend work together",
+      "summary": " how to make the fronend interact to backend through API's to create functional apps  ...",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    },
+    {
+      "title": "Databases",
+      "summary": " Where and how is the data collected by frontend stored for later access ... ",
+      "url": "https://pms.com",
+      "highlights": [
+        "Doctors diagnosis the patient and store the finding and prescriptions",
+        "Lab technitians run tests and register the result and attach scan files",
+        "receptions register new or check appointment of follow up patients  "
+      ],
+      "thumbnail": "img/project1.png",
+      "selectedForHomePage": "",
+      "images": [
+        {
+          "img_path": "portfolio_media/yt1.png",
+          "caption": "Main Channel"
+        },
+        {
+          "img_path": "portfolio_media/yt2.png",
+          "caption": "Tutorials"
+        },
+        {
+          "img_path": "portfolio_media/yt3.png",
+          "caption": "Live Streams"
+        }
+      ]
+    }
+  ]
 }

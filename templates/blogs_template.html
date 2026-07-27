@@ -9,18 +9,18 @@
 
        
 
-        <!-- Projects -->
+        <!-- Blogs -->
         <section id="projects" class="section-container">
-               {% if projects %}
+               {% if blogs %}
                 <div class="projects">
-                     <h4 class="section-heading">Projects</h4>
+                     <h4 class="section-heading">Blogs</h4>
                      <div class="projects_list">
-                         {% for project in projects %}
+                         {% for blog in blogs %}
                          <ul>
                           <li>
-                            {{project.title}}
-                             <div class="projectDescription">
-                              <span>{{project.summary}}</span> <button>details</button>
+                           <h5 class="blog_title">{{blog.title}}</h5> 
+                             <div class="blog_view">
+                              <span>{{blog.abstract}}</span> <button class="readBtn">read</button>
                              </div>
                           </li>
                          </ul>
