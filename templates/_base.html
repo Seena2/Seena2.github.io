@@ -25,10 +25,10 @@
              {% if contact.email or contact.phone or contact.location %}
              <Address >
                 <ul class="contact">
-                    {% if contact.email %}<li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li> {% endif %}
-                   <li class="left_border"><a href="https://seena2.github.io/">www.Seena2.com</a></li>
-                   <li class="left_border"><a href="https://www.linkedin.com/in/dinku-hamda">www.linkedin.com/in/dinku-hamda</a></li>
-                   <li class="left_border"><a href="https://www.github.com/Seena2">www.github.com/Seena2</a></li>
+                    {% if contact.email %}<li><a href="mailto:{{ contact.email }}" target="_blank">{{ contact.email }} </a></li> {% endif %}
+                   <li class="left_border"><a href="https://seena2.github.io/" target="_blank">www.Seena2.com</a></li>
+                   <li class="left_border"><a href="https://www.linkedin.com/in/dinku-hamda" target="_blank">www.linkedin.com/in/dinku-hamda</a></li>
+                   <li class="left_border"><a href="https://www.github.com/Seena2" target="_blank">www.github.com/Seena2</a></li>
                 <!-- |   {% if contact.phone %}<li></li><a href="tel:+{{ contact.phone | replace('-', '') }}">{{ contact.phone }}</a>{% endif %}
                 |   {% if contact.location %}<li>{{ contact.location }}</li>{% endif %} -->
                 </ul>
@@ -83,7 +83,8 @@
               <div class="footer_social_links"> 
                 <ul class="social_liks">
                 {% for link in social_links %}
-                  <li><a href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}" class="link-with-icon">
+                  <li><a href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}"
+                     class="link-with-icon" target="_blank">
                       {% if link.svg_data %}{{ link.svg_data | safe }}{% endif %}
                       {{ link.label }}
                     </a>
