@@ -302,7 +302,7 @@
   "skills2": [
     {
       "name": "Frontend",
-      "technologies": ["HTML/CSS", "JavaScript", "React", "NextJS", "Vue"]
+      "technologies": ["HTML/CSS", "JavaScript", "React", "NextJS", "Vue","Flutter/Dart"]
     },
     {
       "name": "Backend",
