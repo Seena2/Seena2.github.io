@@ -18,8 +18,8 @@
     <header >
         <div class="banner">
              <div class="title">
-                {% if label %}<h3>{{label}}</h3>{% endif %}
-                <h5>{{name}}</h5>
+                <h3>{{name}}</h3>
+                {% if label %}<h5>{{label}}</h5>{% endif %}
             </div>
             <!-- Contact address -->
              {% if contact.email or contact.phone or contact.location %}

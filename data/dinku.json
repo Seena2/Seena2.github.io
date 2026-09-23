@@ -10,8 +10,7 @@
     "location": ""
   },
   "summary": [
-    "I am professional software engineer with 15+ years of hands-on job experience in designing, developing, maintaining and shipping high-quality, reliable, scalable and performant applications while providing leadership, guidance, and technical direction within development teams.",
-    "My goal is to empower people and businesses by transforming business requirements into robust, scalable and usable applications that solves real-world problems, improves lives, and drives innovation."
+    "I am a Software Engineer with 15+ years of experience architecting and shipping scalable, high-performance web applications and microservices. Expert in full-stack development (modern JavaScript frameworks, Node.js, Python, Java, .NET), relational/NoSQL databases, cloud infrastructure (AWS, Docker, Kubernetes), and AI API integration. Recognized for guiding development teams, modernizing legacy architectures, and transforming complex requirements into reliable, user-centric software."
   ],
   "url": "https://seena2.github.io",
   "social_links": [
@@ -21,7 +20,7 @@
       "svg_path": "img/globe.svg"
     },
     {
-      "label": "Linkdin",
+      "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/dinku-hamda",
       "svg_path": "img/linkedin.svg"
     },
@@ -44,19 +43,19 @@
   "work_experience": [
     {
       "position": "Lead software Engineer",
-      "company": "Furtu Solutions",
+      "company": "Furtu",
       "location": "",
       "url": "",
       "start_date": "oct, 2024",
       "end_date": "Present",
       "summary": "",
       "highlights": [
-        "As lead Software engineer at Furtu, I design, build, managed project scope, mitigated risks, and ensure technical deliverables aligned with stakeholder requirements, time and budgeting constraints resulting in a 25% increase in overall project success and user satisfaction",
-        "Developed scalable microservices that improved platform performance by 40%",
-        "Engineered robust, secure, and scalable web applications for diverse enterprise clients, integrating modern full-stack architectures that improved market competitiveness and user retention by 25%.",
-        "Designed and maintained scalable, secure web applications using MERN stack, optimizing front-end and back-end performance to drive a 20% increase in user. ",
-        "Engineered seamless third-party API integrations, boosting core system capabilities and expanding platform service offerings by 25%",
-        "Delivered a scalable web application capable of handling 10k concurrent users without performance degradation."
+        "Own technical design, project scope, and team deliverables across cross-functional engineering teams, aligning deliverables with stakeholder requirements and budget/timeline constraints — driving a 25% increase in project success rate and client satisfaction",
+        "Architect and build scalable microservices and MERN-stack applications supporting 10k+ concurrent users with zero performance degradation, improving platform performance by 40%.",
+        "Design secure, enterprise-grade full-stack applications for diverse clients, strengthening market competitiveness and lifting user retention by 30%.",
+        "Lead integration of third-party APIs and enterprise systems, expanding platform service offerings by 25%. ",
+        "Conduct code reviews and maintain CI/CD pipelines (Docker, Kubernetes) to raise release velocity and code quality across the team.",
+        "Mentor engineers on architecture decisions, coding best practices, and Agile delivery."
       ]
     },
     {
@@ -68,14 +67,10 @@
       "end_date": "Oct,2024",
       "summary": "",
       "highlights": [
-        "Developed and optimized dynamic web applications for healthcare clients, streamlining clinical workflows and boosting overall operational efficiency by 18%.",
-        "Engineered robust internal tools and automated data processing pipelines, which eliminated manual bottlenecks and boosted overall team productivity by 20%",
-        "Directed the end-to-end delivery of 10+ major web applications using diverse technology stacks, ensuring all projects were completed within strict budget and timeline constraints.",
-        "Optimized web application performance by refactoring legacy code, reducing page load times by 40% and directly increasing customer retention.",
-        "Architected reusable components and scalable APIs, automating process functionalities to significantly enhance application speed and reliability",
-        "Optimized web applications performance by refactoring code, reducing load time by 40% and boosting customer retention.",
-        "Developed and designed GIS web applications with the ArcGIS JavaScript API",
-        "Created backend user authentication systems with PHP and MySQL"
+        "Directed end-to-end delivery of 10+ web applications across diverse technologies stacks, within tight timeline and budget constraints.",
+        "Refactored legacy codebases and optimized backend APIs, reducing page load times by 40% and increasing client operational efficiency by 18%.",
+        "Built automated data pipelines and internal engineering tools, eliminating manual bottlenecks and boosting team productivity by 20%.",
+        "Designed reusable UI component and modular RESTful APIs to streamline frontend-backend integration and improve reliability."
       ]
     },
     {
@@ -87,10 +82,10 @@
       "end_date": "Oct,2020",
       "summary": "",
       "highlights": [
-        "Engineered and maintained highly available, secure software systems, utilizing modern web technologies with a strong emphasis on Java and C# (.NET framework).",
-        "Developed and deployed scalable applications, APIs, and databases, managing critical data for thousands of active clients.",
-        "Integrated robust databases into existing MIS infrastructures, significantly expanding capabilities and streamlining day-to-day service delivery.",
-        "Optimized database performance and data integrity, establishing stringent security policies, routine backups, and comprehensive access protocols."
+        "Engineered and maintained highly available, secure enterprise applications using Java, C# (.NET), and relational databases, serving thousands of active users.",
+        "Developed and deployed scalable applications, APIs, and databases managing critical business data.",
+        "Integrated robust databases into existing MIS infrastructures, expanding system capabilities, and streamlining service delivery.",
+        "Strengthened database performance and integrity through strict security policies, routine backups, and access-control protocols."
       ]
     },
     {
@@ -102,28 +97,24 @@
       "end_date": "Dec,2018",
       "summary": "",
       "highlights": [
-        "Spearheaded the migration of legacy systems to a modern web architecture, reducing infrastructure costs by 30% and improving overall system reliability by 20%.",
-        "Developed and optimized scalable, secure MIS databases and backend services, significantly reducing server response times.",
-        "Engineered custom web applications for data collection and manipulation, directly increasing client operational efficiency and user engagement.",
-        "Integrated robust backend APIs and databases utilizing the .NET framework and SQL Server.",
-        "Diagnosed and resolved bottlenecks, refactoring code to maximize execution speed, scalability, and system performance.",
-        "Collaborated cross-functionally with design and development teams to implement UI/UX designs across multiple platforms.",
-        "Spearheaded continuous improvement initiatives and delivered comprehensive project specifications and event reporting."
+        "Spearheaded migration of legacy client-server systems to modern web architecture, cutting infrastructure costs by 30% and boosting system reliability by 20%.",
+        "Developed and optimized scalable MIS databases and backend services reducing server response times.",
+        "Engineered custom web applications for data collection, increasing operational efficiency and user engagement by 25%.",
+        "Integrated backend APIs and databases using the .NET framework and SQL Server.",
+        "Collaborated with cross-functional product and UI/UX design teams to build accessible data interfaces."
       ]
     },
     {
       "position": "Programmer",
-      "company": "OLSA-INSA",
+      "company": "O-ICT",
       "location": "",
       "url": " ",
       "start_date": "Sep, 2009",
       "end_date": "Dec,2014",
       "summary": "",
       "highlights": [
-        "Architected and maintained secure, highly scalable web applications utilizing Java, C#/.NET, and JavaScript, driving improved application performance and user retention.",
-        "Engineered clean, reusable, and well-documented code, delivering projects on-time and under budget while boosting overall user satisfaction.",
-        "Strengthened system defenses by implementing robust security protocols, ensuring 100% compliance with customer data protection standards.",
-        "partnered with cross-functional teams using Agile methodologies to ensure seamless project execution and timely delivery."
+        "Architected and maintained secure, scalable web applications using Java, C#/.NET, and JavaScript within cross-functional Agile teams.",
+        "Implemented robust data security standards, role-based access controls and data protection protocols ensuring full compliance with enterprise standards."
       ]
     }
   ],
@@ -301,45 +292,73 @@
   ],
   "skills2": [
     {
-      "name": "Frontend",
-      "technologies": ["HTML/CSS", "JavaScript", "React", "NextJS", "Vue","Flutter/Dart"]
-    },
-    {
-      "name": "Backend",
+      "name": "Languages",
       "technologies": [
-        "Java",
-        "NodeJS",
-        "NextJS",
+        "JavaScript (ES6+)",
         "Python",
+        "Java",
+        "C# (.NET)",
         "C++",
-        "C#",
         "PHP",
         "Kotlin",
         "Ruby",
-        "APIs"
+        "Dart",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "technologies": [
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Flutter",
+        "HTML5",
+        "CSS3/SASS",
+        "Figma"
+      ]
+    },
+    {
+      "name": "Backend & APIs",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "RESTful & GraphQL APIs",
+        "Microservices",
+        "Systems Architecture"
       ]
     },
     {
       "name": "Databases",
       "technologies": [
-        "Oracle",
-        "SQL-Server",
-        "MySQL/MariaDB",
         "PostgreSQL",
         "MongoDB",
-        "ORMs"
+        "MySQL",
+        "Oracle",
+        "SQL Server",
+        "ORM/ODMs"
       ]
     },
     {
-      "name": "Tools",
+      "name": "DevOps & Tools",
       "technologies": [
-        "Git/GitHub",
-        "CI/CD automations",
+        "AWS",
         "Docker",
-        "kubernetes",
-        "AI technologies",
-        "Figma",
-        "AWS"
+        "Kubernetes",
+        "CI/CD",
+        "Git/GitHub",
+        "AI Tooling/LLM APIs"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "technologies": [
+        "Technical Leadership",
+        "Agile/Scrum",
+        "Code Review",
+        "Testing",
+        "Mentoring",
+        "Project Management"
       ]
     }
   ],
@@ -348,7 +367,7 @@
       "institution": "HiLCoE",
       "location": "Addis Ababa",
       "url": "https://hilcoe.edu",
-      "degree": "Masters of Science in Software Engineering",
+      "degree": "M.Sc. in Software Engineering ",
       "honors": [
         "Hackaton winner",
         "Problems solver of the batch",
@@ -362,7 +381,7 @@
       "institution": "University of Gondar",
       "location": "",
       "url": "https://gondarUniveristy.edu",
-      "degree": "Bachelor of Science in Computer Science",
+      "degree": "B.Sc. in Computer Science ",
       "honors": [
         "2010 Outstanding Student Award",
         "award two",
